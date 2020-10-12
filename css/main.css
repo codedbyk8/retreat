@@ -94,6 +94,7 @@ footer {
        justify-content: center;
        align-items: center;
        flex-flow: row wrap;
+       padding: 15px 0;
    }
 
 
@@ -105,18 +106,24 @@ header .content-wrapper {
 
 }
 
+.header-divider {
+  width: 100%;
+}
+
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%;
 }
 
 
@@ -130,6 +137,15 @@ footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 50px 0;
+
 }
 
 
@@ -161,6 +177,14 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 50%;
+}
+
 .features .feature-items {
   display: flex;
   justify-content: center;
@@ -177,6 +201,23 @@ aside {
   flex-flow: row wrap;
 }
 
+.reviews h3 {
+  width: 45%;
+}
+
+article div {  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; }
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90%;
+}
+
 .mission {
   display: flex;
   justify-content: center;
@@ -189,6 +230,13 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contract address {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
 }
 
 .faq {
