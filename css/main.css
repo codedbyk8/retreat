@@ -103,7 +103,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  margin: 0;
 }
 
 .header-divider {
@@ -146,8 +146,12 @@ footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 
+
 }
 
+ footer p {
+   margin: 0;
+ }
 
 /*-------------------- Main styles -------------------------*/
 
@@ -192,6 +196,9 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
 /*---------------------- Reviews ----------------------------*/
 
 .reviews {
@@ -205,10 +212,13 @@ aside {
   width: 45%;
 }
 
-article div {  display: flex;
+article div {
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+}
 
 .content-wrapper {
   display: flex;
