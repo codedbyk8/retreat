@@ -137,7 +137,7 @@ textarea {
  }
 
  img {
-
+   width: 100%;
  }
 
  figure {
@@ -235,6 +235,8 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: url('img/hero.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 
