@@ -183,7 +183,7 @@ aside {
 
 .features article {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width: 50%;
@@ -497,7 +497,7 @@ footer .copyright {
         flex-flow: row wrap;
     }
 
-    
+
     address.contact-content h3 {
       display: flex;
       justify-content: center;
@@ -529,79 +529,57 @@ footer .copyright {
 
 
 
-@media only screen and (min-width: 1200px) {
-  header {
-  }
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here */
+        .content-wrapper {
+             max-width: 960px;
+        }
 
-  header .content-wrapper {
-      width:
-  }
+         /* Hero */
+        .hero-area h1 {
+            width 55%;
+        }
 
-  header nav {
-      width:
-  }
+        /* Aside */
+        aside .content-wrapper {
+            justify-content: flex-start;
+        }
 
-  header nav ul {
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form {
+            width: 25%;
+        }
 
-  }
+        /* Features */
+        .features h2 {
+            width: 72%;
+        }
 
-  .header-divider {
-      display: none;
-  }
-   /* Hero Area */
+        .features article {
+            flex-basis: 15%;
+        }
 
- /* Aside */
- aside .content-wrapper {
-     margin: 50px 0;
- }
+        /* Reviews */
+        .reviews article div {
+            width: 35%;
+        }
 
- aside .content-wrapper .form-description,
- aside .content-wrapper .form {
-     width:
-     margin: 0;
- }
+    /* ==========================================================================
+       About Page
+       ========================================================================== */
+        .mission h2,
+        .contact-section .content-wrapper h2 {
+            width:
+        }
 
- /* Features */
+    /* ==========================================================================
+       FAQ Page
+       ========================================================================== */
+        .faq h2 {
+            width: 100%;
+        }
 
- .features article {
-
- }
-
- .features .features-item-description {
-     width:
- }
-
- /* Reviews */
- .reviews article {
-
- }
-
- .reviews article div {
-     width:
- }
-
- /* Footer */
- footer .content-wrapper {
-     width:
-     margin: 100px 0;
- }
-
- .footer-content {
-
- }
-
- footer .contact {
-     margin-bottom: 0;
- }
-
- footer .copyright {
-     width:
- }
-
-  /* Desktop styles*/
-}
-  /* Style adjustments for high resolution devices */
-}
+    }
 
 /* ==========================================================================
    Print styles.
