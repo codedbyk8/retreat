@@ -96,6 +96,7 @@ textarea {
 
  body {
    font-family: 'Open Sans', sans-serif;
+   color: #e2e3ed;
 
  }
 
@@ -104,6 +105,7 @@ textarea {
    list-style: none;
    font-family: 'Open Sans', sans-serif;
    line-height: 2em;
+   color: #e2e3ed;
 
  }
 
@@ -115,17 +117,22 @@ textarea {
 
  h2 {
    font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+
 
  }
 
  h3,
  h4 {
    font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+
  }
 
 
  p {
    font-family: 'Open Sans', sans-serif;
+   text-align: center;
 
  }
 
@@ -156,6 +163,8 @@ footer {
        align-items: center;
        flex-flow: row wrap;
        padding: 15px 0;
+       background-color: #202322;
+       color: #e2e3ed;
    }
 
 
@@ -165,6 +174,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  color: #e2e3ed;
 }
 
 .header-divider {
@@ -178,6 +188,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
 }
 
 header nav ul {
@@ -233,6 +245,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 
 }
 
@@ -269,10 +283,18 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  color: #e2e3ed;
+  background-color: #2a423a;
+  font-weight: 300;
 }
 
 .reviews h3 {
   width: 45%;
+  font-weight: 300;
+}
+
+.reviews p {
+  text-align: left;
 }
 
 article div {
@@ -281,6 +303,7 @@ article div {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 .content-wrapper {
@@ -302,14 +325,26 @@ article div {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+
 }
 
+.mission-content p {
+  display: flex;
+  flex-flow: row wrap;
+}
 
-.contact-section .content-wrapper h3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper h3 {
+  text-decoration: none;
+
   }
 
 
@@ -593,7 +628,31 @@ footer .copyright {
         width: 100%;
     }
 
+    aside .form {
+      margin-top: 30px;
+    }
 
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
 
     @media only screen and (min-width: 1200px) {
