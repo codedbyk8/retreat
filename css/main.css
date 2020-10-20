@@ -211,52 +211,37 @@ header nav ul {
   width: 100%;
   justify-content: space-around;
 }
-
 footer {
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+footer p {
+  margin: 0;
 }
-
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 }
 
- footer p {
-   margin: 0;
- }
-
- footer .contact {
+footer .contact {
   margin-bottom: 50px;
-}
-
-footer .social {
-  display:flex;
-  flex-direction: column;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -640,7 +625,7 @@ h2 {
  }
 
  header nav {
-     width: 15%;
+     width: 40%;
  }
 
  header nav ul {
@@ -689,7 +674,17 @@ aside .content-wrapper .form {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  flex-basis: 50%;
+  width: 50%;
+
+}
+
+.features .features-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-left: 0;
+
 }
 
 .features .features-item-description {
@@ -704,75 +699,86 @@ aside .content-wrapper .form {
  }
 
  .features .features-item-description {
-   width: 62%;
+   width: 50%;
  }
 
 
 /*--------------------- Reviews ----------------------------*/
 
-
-.reviews article {
-display: flex;
-justify-content: space-between;
-
+.reviews {
+  display: flex;
+  justify-content: center;
 }
 
-.reviews figure
 .reviews article {
+width: 50%;
+}
+
+.reviews figure {
     width: 50%;
+
 }
 
 .reviews h2 {
-   width: 85%;
+   width: 100%;
+   text-align: left;
  }
 
  .reviews h3 {
    width: 75%;
    margin: 0;
+   text-align: left;
+ }
+
+ .reviews p {
+   margin-left: 25px;
  }
 
 /*------------------------- Footer ----------------------------*/
 
 
 footer .content-wrapper {
-    width: 80%;
-    margin: 110px, 0;
-}
+    width: 65%;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-}
-
-footer .contact {
+  footer .contact {
     margin-bottom: 0;
-}
+    flex-direction: column;
+    padding-right: 66%;
 
-footer h4 {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-}
 
-footer p {
-  line-height: 1.285;
-}
+  }
 
-footer .social-icons {
-  width: 12.5em;
-  justify-content: space-around;
-}
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
 
-footer .copyright {
-  width: 100%;
-}
+  footer p {
+      line-height: 1.285;
+  }
 
-footer .copyright {
-    width: 25%;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
 
-}
+  footer .copyright {
+    width: 100%;
+  }
+
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -870,6 +876,9 @@ footer .copyright {
           padding: 15px 0;
           }
 
+          footer .contact {
+            padding-left: 33%;
+          }
 
 
         h2 {
@@ -901,21 +910,30 @@ footer .copyright {
 
         aside .content-wrapper .form-description,
         aside .content-wrapper .form {
-            width: 25%;
+            width: 50%;
         }
 
         /* Features */
-        .features h2 {
-            width: 70%;
+
+        .features-items {
+          padding-left: 0;
+        }
+
+
+        .features h3 {
+          width: 100%;
+
         }
 
         .features article {
             flex-basis: 33%;
+            width: 63%;
         }
 
         /* Reviews */
         .reviews article div {
-            width: 42%;
+            width: 125%;
+            text-align: left;
         }
 
     /* ==========================================================================
@@ -936,7 +954,7 @@ footer .copyright {
           }
 
         .content-wrapper {
-          width: 50%;
+          width: 100%;
           display: flex;
           flex-flow: row wrap;
         }
